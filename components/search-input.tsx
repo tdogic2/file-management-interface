@@ -19,7 +19,7 @@ export default function SearchInput() {
       <Input
         className="rounded-xl pl-10 focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0"
         type="text"
-        placeholder="Search in the list"
+        placeholder="Search in the List"
         defaultValue=""
         onChange={(event) => setValue(event.target.value)}
       />

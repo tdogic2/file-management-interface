@@ -24,7 +24,12 @@ export default function DiskCleaner() {
           <HardDrive className="w-6 h-6" />
           <span className="text-sm">Disk Space</span>
         </div>
-        <Button className="rounded-full" variant="ghost" size="icon">
+        <Button
+          className="rounded-full"
+          variant="ghost"
+          size="icon"
+          onClick={() => console.log("Clicked on Three Dots")}
+        >
           <MoreHorizontal className="cursor-pointer" />
         </Button>
       </CardHeader>
@@ -48,7 +53,11 @@ export default function DiskCleaner() {
         </div>
       </CardContent>
       <CardFooter className="p-4">
-        <Button className="rounded-xl w-full" variant="special">
+        <Button
+          className="rounded-xl w-full"
+          variant="special"
+          onClick={() => console.log("Clicked on Disk Cleaner")}
+        >
           Disk Cleaner
         </Button>
       </CardFooter>

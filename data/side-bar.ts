@@ -11,7 +11,9 @@ import {
   Video,
 } from "lucide-react";
 
-export const sideBar = [
+import { SideBarType } from "@/types";
+
+export const sideBar: SideBarType = [
   {
     trigger: {
       icon: Folders,
@@ -21,37 +23,37 @@ export const sideBar = [
       {
         icon: Music4,
         text: "Music",
-        action: () => console.log("All Downloads - Music"),
+        action: () => console.log("Clicked on All Downloads - Music"),
       },
       {
         icon: FileArchive,
-        text: "Compressed",
-        action: () => console.log("All Downloads - Compressed"),
+        text: "Archive",
+        action: () => console.log("Clicked on All Downloads - Archive"),
       },
       {
         icon: Video,
         text: "Videos",
-        action: () => console.log("All Downloads - Videos"),
+        action: () => console.log("Clicked on All Downloads - Videos"),
       },
       {
         icon: AppWindow,
         text: "Programs",
-        action: () => console.log("All Downloads - Programs"),
+        action: () => console.log("Clicked on All Downloads - Programs"),
       },
       {
         icon: FileText,
         text: "Documents",
-        action: () => console.log("All Downloads - Documents"),
+        action: () => console.log("Clicked on All Downloads - Documents"),
       },
       {
         icon: Bot,
         text: "APKs",
-        action: () => console.log("All Downloads - APKs"),
+        action: () => console.log("Clicked on All Downloads - APKs"),
       },
       {
         icon: Image,
         text: "Images",
-        action: () => console.log("All Downloads - Images"),
+        action: () => console.log("Clicked on All Downloads - Images"),
       },
     ],
   },
@@ -64,37 +66,37 @@ export const sideBar = [
       {
         icon: Music4,
         text: "Music",
-        action: () => console.log("Unfinished - Music"),
+        action: () => console.log("Clicked on Unfinished - Music"),
       },
       {
         icon: FileArchive,
-        text: "Compressed",
-        action: () => console.log("Unfinished - Compressed"),
+        text: "Archive",
+        action: () => console.log("Clicked on Unfinished - Archive"),
       },
       {
         icon: Video,
         text: "Videos",
-        action: () => console.log("Unfinished - Videos"),
+        action: () => console.log("Clicked on Unfinished - Videos"),
       },
       {
         icon: AppWindow,
         text: "Programs",
-        action: () => console.log("Unfinished - Programs"),
+        action: () => console.log("Clicked on Unfinished - Programs"),
       },
       {
         icon: FileText,
         text: "Documents",
-        action: () => console.log("Unfinished - Documents"),
+        action: () => console.log("Clicked on Unfinished - Documents"),
       },
       {
         icon: Bot,
         text: "APKs",
-        action: () => console.log("Unfinished - APKs"),
+        action: () => console.log("Clicked on Unfinished - APKs"),
       },
       {
         icon: Image,
         text: "Images",
-        action: () => console.log("Unfinished - Images"),
+        action: () => console.log("Clicked on Unfinished - Images"),
       },
     ],
   },
@@ -107,37 +109,37 @@ export const sideBar = [
       {
         icon: Music4,
         text: "Music",
-        action: () => console.log("Finished - Music"),
+        action: () => console.log("Clicked on Finished - Music"),
       },
       {
         icon: FileArchive,
-        text: "Compressed",
-        action: () => console.log("Finished - Compressed"),
+        text: "Archive",
+        action: () => console.log("Clicked on Finished - Archive"),
       },
       {
         icon: Video,
         text: "Videos",
-        action: () => console.log("Finished - Videos"),
+        action: () => console.log("Clicked on Finished - Videos"),
       },
       {
         icon: AppWindow,
         text: "Programs",
-        action: () => console.log("Finished - Programs"),
+        action: () => console.log("Clicked on Finished - Programs"),
       },
       {
         icon: FileText,
         text: "Documents",
-        action: () => console.log("Finished - Documents"),
+        action: () => console.log("Clicked on Finished - Documents"),
       },
       {
         icon: Bot,
         text: "APKs",
-        action: () => console.log("Finished - APKs"),
+        action: () => console.log("Clicked on Finished - APKs"),
       },
       {
         icon: Image,
         text: "Images",
-        action: () => console.log("Finished - Images"),
+        action: () => console.log("Clicked on Finished - Images"),
       },
     ],
   },

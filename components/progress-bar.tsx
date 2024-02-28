@@ -8,7 +8,8 @@ function SemiCircle({
   gradientColors,
 }: SemiCircleType) {
   const circumference = Math.PI * radius;
-  const strokePercentage = (percentage * circumference) / 100;
+  const clampedPercentage = Math.min(100, Math.max(0, percentage));
+  const strokePercentage = (clampedPercentage * circumference) / 100;
 
   const x = width / 2;
   /* 
@@ -35,7 +36,7 @@ function SemiCircle({
     <>
       <defs>
         <linearGradient
-          id={`gradient-${percentage}`}
+          id={`gradient-${clampedPercentage}`}
           x1="0%"
           y1="0%"
           x2="100%"
@@ -47,7 +48,7 @@ function SemiCircle({
       <path
         d={`M ${startX} ${startY} A ${radius} ${radius} 0 0 1 ${endX} ${endY}`}
         fill="transparent"
-        stroke={`url(#gradient-${percentage})`}
+        stroke={`url(#gradient-${clampedPercentage})`}
         strokeWidth={10}
         strokeDasharray={circumference}
         strokeDashoffset={circumference - strokePercentage}
@@ -98,13 +99,15 @@ export default function ProgressBar({
     */
     <svg width={width} height={height}>
       <g>
-        <SemiCircle
-          percentage={100}
-          width={width}
-          height={height}
-          radius={radius}
-          gradientColors={["#212129", "#212129"]}
-        />
+        {percentage < 100 && (
+          <SemiCircle
+            percentage={100}
+            width={width}
+            height={height}
+            radius={radius}
+            gradientColors={["#212129", "#212129"]}
+          />
+        )}
         <SemiCircle
           percentage={percentage}
           width={width}
